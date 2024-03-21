@@ -1,0 +1,28 @@
+#!/bin/bash
+
+PROGRAM=../tsp
+REFERENCE=../tsp_x86
+
+$PROGRAM -x > output.txt 2>/dev/null
+$REFERENCE -x > expected_output.txt 2>/dev/null
+
+ACTUAL_OUTPUT=$(<output.txt)
+EXPECTED_OUTPUT=$(<expected_output.txt)
+
+if [ "$ACTUAL_OUTPUT" == "$EXPECTED_OUTPUT" ]; then
+    echo "Test passed: -x option prints correct error message."
+    rm output.txt
+    rm expected_output.txt
+    exit 0
+else
+    echo "Test failed: Error  message does not match expected."
+    echo "expected:"
+    cat expected_output.txt
+    echo "got:"
+    cat output.txt
+
+    rm output.txt
+    rm expected_output.txt
+    exit 1
+fi
+

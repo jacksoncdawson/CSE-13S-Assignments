@@ -1,0 +1,28 @@
+#!/bin/bash
+
+PROGRAM=../tsp
+REFERENCE=../tsp_x86
+
+$PROGRAM -i maps/basic.graph > output.txt 
+$REFERENCE -i maps/basic.graph > expected_output.txt
+
+ACTUAL_OUTPUT=$(<output.txt)
+EXPECTED_OUTPUT=$(<expected_output.txt)
+
+if [ "$ACTUAL_OUTPUT" == "$EXPECTED_OUTPUT" ]; then
+    echo "Test passed: basic.graph"
+    rm output.txt
+    rm expected_output.txt
+    exit 0
+else
+    echo "Test failed: basic.graph"
+    echo "expected:"
+    cat expected_output.txt
+    echo "got:"
+    cat output.txt
+
+    rm output.txt
+    rm expected_output.txt
+    exit 1
+fi
+

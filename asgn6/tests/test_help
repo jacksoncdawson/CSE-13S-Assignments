@@ -1,0 +1,28 @@
+#!/bin/bash
+
+PROGRAM=../tsp
+REFERENCE=../tsp_x86
+
+$PROGRAM -h > output.txt 2>/dev/null
+$REFERENCE -h > expected_output.txt 2>/dev/null
+
+ACTUAL_OUTPUT=$(<output.txt)
+EXPECTED_OUTPUT=$(<expected_output.txt)
+
+if [ "$ACTUAL_OUTPUT" == "$EXPECTED_OUTPUT" ]; then
+    echo "Test passed: -h option prints correct usage message."
+    rm output.txt
+    rm expected_output.txt
+    exit 0
+else
+    echo "Test failed: Usage message does not match expected."
+    echo "expected:"
+    cat expected_output.txt
+    echo "got:"
+    cat output.txt
+
+    rm output.txt
+    rm expected_output.txt
+    exit 1
+fi
+
