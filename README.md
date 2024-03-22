@@ -1,49 +1,28 @@
 # CSE13S-02 Winter 2024
 
-## Assignment Directories
+With instructor Kerry Veenstra and TA Jessie Srinivas.
+I put a lot of work into succeeding in this course, and am proud to have 
 
-All work for an assignment must go into that assignment's corresponding folder. During
-grading, only the contents of that folder will be checked, and anything outside of it
-will not be graded. 
+## Assignments
 
-Not all of the assignment directories may be used (e.g. we may not have an assignment 8).
-It's okay to have an empty directory for assignments that haven't been assigned yet. 
+During my course, there were 7 total assignments. Each assignment has its own directory, which generally includes a Makefile, testing scripts, a pdf overviewing how to complete the assignment, a design document, and the code!
 
-## Additional Files
+In earlier assignments, Makefiles were provided to us, but as the course progressed, we were expected to write our own Makefiles. 
 
-There are a couple of extra files that we've provided for you.
+I wrote all present tests, although I admit often I used the grading pipeline to check my code for correctness. 
 
-`README.md`: That's the file you're reading now
+I also wrote all of the design documents, using a provided template. This was my introduction to both writing design documents, and using LaTeX. I found working through my thoughts before diving into the code to be helpful, although this was not always the process I followed due to time restraints. Using LateX presented a learning curve, but I enjoyed working with it and ended up creating my "cheat-sheet" for a different class in LaTeX as well.
 
-`.gitignore`: This file tells git to ignore certain files, or certain files whose name
-matches a particular pattern. For example, it's telling git to ignore all `.o` files,
-meaning they won't show up when running `git status`, amongst other things. This helps
-to ensure you don't accidentally commit files you shouldn't be committing. We've provided
-some common extensions for git to ignore. If you wish, you can add more as you see fit.
+### Assignment 0: How to Write Tests
 
-`.clang-format`: This contains the formatting instructions used by `clang-format` so it 
-knows how to format your code. Do not modify this file, as we require that your code
-adheres to this format specification. 
+Assignment 0 tasked me with writing tests to identify bugs in several faulty calculator programs. I was only provided with binaries of the various implementations, so writing tests to run with the provided runner.sh was the best way to identify any given bug. I wrote a lot of tests, but overlooked a few simple edge cases that I should have tested for. 
 
-You'll also find a blank README in each of the assignment directories. No need to worry
-about those until you actually start each of those assignments. 
+I received an A on this assignment, and definitely learned a lot about bash scripting and working within a terminal.
 
-## Pipeline
+### Assignment 1: Left, Right, and Center
 
-Your repository is configured with an autograding system that you can run to check your 
-work, known as the "pipeline". Instructions on how to use it will be provided during the
-quarter. 
+For Assignment 1, I built a program that would simulate a game of "Left, Right, and Center". The game takes optional input parameters from the user to determine the number of "players" and/or the seed for the pseudo-random number generator to determine the outcome of each die "roll". 
 
-The pipeline makes use of certain secrets provided through Gitlab, which allows us to run
-tests without revealing them. **DO NOT ATTEMPT TO MODIFY REPOSITORY OR PIPELINE SETTINGS 
-TO GAIN ACCESS TO THESE SECRETS.** Any evidence of intentional tampering with the pipeline
-to reveal these secrets will be treated as a
-[Level 2 academic misconduct violation](https://ue.ucsc.edu/academic-misconduct.html), 
-resulting in a 1--3 term suspension ***for a first offense***. 
+I received a perfect score for this assignment, and learned about control flow, structs, enums, and some abstraction in C, among some other less prominent concepts.
 
-There are multiple safeguards in place to prevent you from doing so, so you don't need
-to worry about "accidentally" stumbling across the pipeline secrets. So long as you
-use the pipeline according to directions, you will be fine. But woe unto you if you try
-*anything* deliberate, which would be a clear and intentional violation of Sections
-102.011, 102.014, 102.015, and 102.05 of the
-[UCSC Policy on Student Conduct and Discipline](https://deanofstudents.ucsc.edu/student-conduct/student-handbook/100.003.pdf).
+### Assignments 3-7 Coming Soon...
