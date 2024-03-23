@@ -40,6 +40,10 @@ I received a perfect score for this assignment, and had a lot of fun with it.
 
 ### Assignment 4: Calc
 
+In assignment 4, I built a simple "scientific calculator". Command line arguments specify whether my custom mathematical operators or C standard functions will be used. Simple calculations such as addition, subtraction, division, modulus and multiplication are computed using Reverse-Polish Notation (RPN), facilitated by a simple stack implementation. For more complex operations such as square-root, cosine, sine, and tangent, I implemented custom algorithms. 
+
+I found reading and interpreting input to be the most challenging part of this assignment, but really enjoyed building custom algorithms for trigonometric functions and diving deeper into RPN.
+
 ### Assignment 5: Towers
 
 ### Assignment 6: Surfin' USA
