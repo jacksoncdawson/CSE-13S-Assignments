@@ -10,7 +10,7 @@ In earlier assignments, Makefiles were provided to us, but as the course progres
 
 I wrote all present tests, although I often used the grading pipeline to check my code for correctness.
 
-I also wrote all of the design documents, using a provided template. This was my introduction to both writing design documents, and using LaTeX. I found working through my thoughts before diving into the code to be helpful, although this was not always the process I followed due to time restraints. Using LateX presented a learning curve, but I enjoyed working with it and ended up creating my "cheat-sheet" for a different class in LaTeX as well.
+I also wrote all of the design documents, using a provided template. This was my introduction to both writing design documents, and using LaTeX. I found working through my thoughts before diving into the code to be helpful, although this was not always the process I followed due to time restraints. Using LaTeX presented a learning curve, but I enjoyed working with it and ended up creating my "cheat-sheet" for a different class in LaTeX as well.
 
 ### Assignment 0: Writing Tests
 
