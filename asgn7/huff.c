@@ -12,8 +12,6 @@
 #include <string.h>
 #include <unistd.h>
 
-void bit_flush(BitWriter *buf);
-
 typedef struct Code {
     uint64_t code;
     uint8_t code_length;

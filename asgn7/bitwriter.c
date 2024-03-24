@@ -67,11 +67,3 @@ void bit_write_uint8(BitWriter *buf, uint8_t byte) {
         bit_write_bit(buf, (byte >> i) & 1);
     }
 }
-
-void bit_flush(BitWriter *buf) {
-    if (buf->bit_position > 0) {
-        fputc(buf->byte, buf->underlying_stream);
-        buf->byte = 0;
-        buf->bit_position = 0;
-    }
-}

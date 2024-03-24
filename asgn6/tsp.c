@@ -52,6 +52,7 @@ void tsp_dfs_visit(Graph *g, uint32_t currentVertex, uint32_t startVertex, Path 
     graph_visit_vertex(g, currentVertex);
     path_add(currentPath, currentVertex, g);
 
+    // If the path is complete, check if it is the best path
     if (path_vertices(currentPath) == graph_vertices(g)) {
         // Attempt to return to start vertex to complete the cycle
         uint32_t returnWeight = graph_get_weight(g, currentVertex, startVertex);
